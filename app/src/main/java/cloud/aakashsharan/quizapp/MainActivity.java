@@ -7,15 +7,14 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- *  This class consists of all methods needed to calculate the score for the quiz app.
- *  It contains a method that displays the score.
+ * This class consists of all methods needed to calculate the score for the quiz app.
+ * It contains a method that displays the score.
  *
- *  @author Aakash Sharan
- *  @since 6/17/2017
+ * @author Aakash Sharan
+ * @since 6/17/2017
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -38,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Calls another method that displays message.
+     *
      * @param view onClick method associated view.
      */
     public void submitAnswers(View view) {
@@ -49,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
         boolean notChecked4 = scoreFromQues4();
         boolean notChecked6 = scoreFromQues6();
         scoreFromQues5();
-        String scoreMessage = "Your total score is " + getScore();
+
         // display score only when all the mandatory questions are answered.
-        if(!notChecked4 && !notChecked6){
-            displayScore(scoreMessage);
+        if (!notChecked4 && !notChecked6) {
+            displayScore(getScore());
         }
     }
 
@@ -126,8 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 setScore(score);
             }
             return false;
-        }
-        else{
+        } else {
             Toast.makeText(this, getString(R.string.question4_toast), Toast.LENGTH_SHORT).show();
         }
         return true;
@@ -168,8 +167,7 @@ public class MainActivity extends AppCompatActivity {
                 setScore(score);
             }
             return false;
-        }
-        else{
+        } else {
             Toast.makeText(this, getString(R.string.question6_toast), Toast.LENGTH_SHORT).show();
         }
         return true;
@@ -177,10 +175,10 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Shows the total score earned by the user.
-     * @param message the message to be displayed
+     *
+     * @param score total score
      */
-    private void displayScore(String message) {
-        TextView scoreView = (TextView) findViewById(R.id.score_view);
-        scoreView.setText(message);
+    public void displayScore(int score) {
+        Toast.makeText(this, getString(R.string.total_score_message, score), Toast.LENGTH_SHORT).show();
     }
 }

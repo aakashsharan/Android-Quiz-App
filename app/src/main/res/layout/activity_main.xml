@@ -167,12 +167,12 @@
                 style="@style/FooterStyle"
                 android:onClick="submitAnswers"
                 android:text="@string/submit" />
-
+            <!--
             <TextView
                 android:id="@+id/score_view"
                 style="@style/FooterStyle"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold" /> -->
 
         </LinearLayout>
 
