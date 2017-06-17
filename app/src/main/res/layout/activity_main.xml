@@ -30,17 +30,20 @@
             <LinearLayout style="@style/CheckBoxViewStyle">
 
                 <CheckBox
+                    android:id="@+id/check_abstract"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/abstract_" />
 
                 <CheckBox
+                    android:id="@+id/check_break"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:text="@string/break_" />
 
                 <CheckBox
+                    android:id="@+id/check_var8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -57,7 +60,9 @@
                 style="@style/QuestionsViewStyle"
                 android:text="@string/question2" />
 
-            <EditText style="@style/EditTextViewStyle" />
+            <EditText
+                android:id="@+id/jdk_edit_text"
+                style="@style/EditTextViewStyle" />
 
         </LinearLayout>
 
@@ -67,7 +72,9 @@
                 style="@style/QuestionsViewStyle"
                 android:text="@string/question3" />
 
-            <EditText style="@style/EditTextViewStyle" />
+            <EditText
+                android:id="@+id/this_edit_text"
+                style="@style/EditTextViewStyle" />
 
         </LinearLayout>
 
@@ -78,18 +85,20 @@
                 style="@style/QuestionsViewStyle"
                 android:text="@string/question4" />
 
-            <RadioGroup style="@style/RadioGroupStyle">
+            <RadioGroup
+                android:id="@+id/radio_group1"
+                style="@style/RadioGroupStyle">
 
                 <RadioButton
-                    style="@style/RadioButtonStyle"
                     android:id="@+id/true1_radio_button"
-                    android:text="@string/true_"/>
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/true_" />
 
                 <RadioButton
-                    style="@style/RadioButtonStyle"
                     android:id="@+id/false1_radio_button"
+                    style="@style/RadioButtonStyle"
                     android:layout_marginLeft="35dp"
-                    android:text="@string/false_"/>
+                    android:text="@string/false_" />
 
             </RadioGroup>
 
@@ -104,11 +113,13 @@
             <LinearLayout style="@style/CheckBoxViewStyle">
 
                 <CheckBox
+                    android:id="@+id/check_string"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/string_immutable" />
 
                 <CheckBox
+                    android:id="@+id/check_stringbuffer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -126,18 +137,20 @@
                 style="@style/QuestionsViewStyle"
                 android:text="@string/question6" />
 
-            <RadioGroup style="@style/RadioGroupStyle">
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                style="@style/RadioGroupStyle">
 
                 <RadioButton
-                    style="@style/RadioButtonStyle"
                     android:id="@+id/true2_radio_button"
+                    style="@style/RadioButtonStyle"
                     android:text="@string/true_" />
 
                 <RadioButton
-                    style="@style/RadioButtonStyle"
                     android:id="@+id/false2_radio_button"
+                    style="@style/RadioButtonStyle"
                     android:layout_marginLeft="35dp"
-                    android:text="@string/false_"/>
+                    android:text="@string/false_" />
 
             </RadioGroup>
 
@@ -152,11 +165,14 @@
 
             <Button
                 style="@style/FooterStyle"
+                android:onClick="submitAnswers"
                 android:text="@string/submit" />
 
             <TextView
+                android:id="@+id/score_view"
                 style="@style/FooterStyle"
-                android:text="Score" />
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

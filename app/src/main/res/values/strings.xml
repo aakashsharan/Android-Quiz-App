@@ -4,7 +4,7 @@
     <string name="header_text">Answer the following questions</string>
     <string name="question1">1. Which of the following are Java keywords?</string>
     <string name="question2">2. What does JDK stands for?</string>
-    <string name="question3">3. What is "'this'" in Java?</string>
+    <string name="question3">3. What is <i>this</i> in Java?</string>
     <string name="question4">4. Can we overload main() method?</string>
     <string name="question5">5. Check the correct ones</string>
     <string name="question6">6. Can constructor inherited?</string>
@@ -18,5 +18,10 @@
     <string name="string_immutable">String is immutable</string>
     <string name="stringbuffer_mutable">StringBuffer is mutable</string>
     <string name="submit">Submit</string>
+
+    <!-- String used in class files -->
+    <string name="jdk">Java Development Kit</string>
+    <string name="object_1">Object</string>
+    <string name="object_2">Current Object</string>
 
 </resources>
