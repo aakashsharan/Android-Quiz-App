@@ -8,10 +8,7 @@
     android:background="#FFF8E1"
     tools:context="cloud.aakashsharan.quizapp.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <LinearLayout style="@style/LinearLayoutStyle">
 
         <TextView
             android:layout_width="match_parent"
@@ -24,23 +21,13 @@
             android:textStyle="bold" />
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayoutStyle">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
+                style="@style/QuestionsViewStyle"
                 android:text="@string/question1" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp">
+            <LinearLayout style="@style/CheckBoxViewStyle">
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -64,106 +51,57 @@
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayoutStyle">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
+                style="@style/QuestionsViewStyle"
                 android:text="@string/question2" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:inputType="textCapWords" />
+            <EditText style="@style/EditTextViewStyle" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayoutStyle">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
+                style="@style/QuestionsViewStyle"
                 android:text="@string/question3" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:inputType="textCapWords" />
+            <EditText style="@style/EditTextViewStyle" />
 
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayoutStyle">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
+                style="@style/QuestionsViewStyle"
                 android:text="@string/question4" />
 
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:orientation="horizontal">
+            <RadioGroup style="@style/RadioGroupStyle">
 
                 <RadioButton
+                    style="@style/RadioButtonStyle"
                     android:id="@+id/true1_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/true_"
-                    android:textAppearance="?android:textAppearanceSmall" />
+                    android:text="@string/true_"/>
 
                 <RadioButton
+                    style="@style/RadioButtonStyle"
                     android:id="@+id/false1_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginLeft="35dp"
-                    android:text="@string/false_"
-                    android:textAppearance="?android:textAppearanceSmall" />
+                    android:text="@string/false_"/>
 
             </RadioGroup>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayoutStyle">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
+                style="@style/QuestionsViewStyle"
                 android:text="@string/question5" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp">
+            <LinearLayout style="@style/CheckBoxViewStyle">
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -182,39 +120,24 @@
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayoutStyle">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
+                style="@style/QuestionsViewStyle"
                 android:text="@string/question6" />
 
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:orientation="horizontal">
+            <RadioGroup style="@style/RadioGroupStyle">
 
                 <RadioButton
+                    style="@style/RadioButtonStyle"
                     android:id="@+id/true2_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/true_"
-                    android:textAppearance="?android:textAppearanceSmall" />
+                    android:text="@string/true_" />
 
                 <RadioButton
+                    style="@style/RadioButtonStyle"
                     android:id="@+id/false2_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginLeft="35dp"
-                    android:text="@string/false_"
-                    android:textAppearance="?android:textAppearanceSmall" />
+                    android:text="@string/false_"/>
 
             </RadioGroup>
 
@@ -228,15 +151,11 @@
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
+                style="@style/FooterStyle"
                 android:text="@string/submit" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
+                style="@style/FooterStyle"
                 android:text="Score" />
 
         </LinearLayout>

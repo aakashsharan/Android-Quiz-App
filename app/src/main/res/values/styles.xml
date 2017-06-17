@@ -8,10 +8,62 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!-- Parent LinearLayout Style -->
     <style name="LinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Questions View Style -->
+    <style name="QuestionsViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <!-- Checkbox View Style -->
+    <style name="CheckBoxViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <!-- EditText View Style -->
+    <style name="EditTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <!-- Radio Group Style -->
+    <style name="RadioGroupStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Radio Button Style -->
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
 
 
-
+    <!-- Footer Style -->
+    <style name="FooterStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">16dp</item>
     </style>
 
 </resources>
